@@ -1,0 +1,129 @@
+:root {
+  --ink: #1a1d21;
+  --muted: #5a6068;
+  --paper: #faf9f6;
+  --accent: #6b5320;
+  --rule: #ddd8cc;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 18px;
+  line-height: 1.65;
+}
+
+.wrap {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.site-header {
+  border-bottom: 2px solid var(--ink);
+  padding: 56px 0 28px;
+  margin-bottom: 8px;
+}
+
+.site-header .org {
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  font-size: 13px;
+  color: var(--accent);
+  margin: 0 0 10px;
+}
+
+.site-header h1 {
+  font-size: 42px;
+  line-height: 1.15;
+  margin: 0 0 8px;
+  font-weight: normal;
+}
+
+.site-header .role {
+  font-size: 19px;
+  color: var(--ink);
+  margin: 0 0 4px;
+}
+
+.site-header .est {
+  color: var(--muted);
+  font-style: italic;
+  margin: 0 0 26px;
+}
+
+.site-header nav a {
+  color: var(--ink);
+  text-decoration: none;
+  margin-right: 22px;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  border-bottom: 1px solid var(--rule);
+}
+
+.site-header nav a:hover { border-bottom-color: var(--accent); color: var(--accent); }
+
+section {
+  padding: 30px 0 6px;
+  border-bottom: 1px solid var(--rule);
+}
+
+section:last-child { border-bottom: none; }
+
+h2 {
+  font-size: 24px;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--accent);
+  margin: 0 0 16px;
+}
+
+h3 {
+  font-size: 19px;
+  font-weight: normal;
+  margin: 28px 0 8px;
+}
+
+p { margin: 0 0 14px; }
+
+a { color: var(--accent); }
+
+ul.entries, ul.repos {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 14px;
+}
+
+ul.entries li, ul.repos li {
+  margin: 0 0 14px;
+}
+
+ul.repos li a { font-weight: bold; text-decoration: none; }
+ul.repos li a:hover { text-decoration: underline; }
+
+.support code {
+  font-family: "SFMono-Regular", Consolas, monospace;
+  font-size: 14px;
+  word-break: break-all;
+}
+
+footer {
+  border-top: 2px solid var(--ink);
+  margin-top: 34px;
+  padding: 20px 0 44px;
+  color: var(--muted);
+  font-style: italic;
+  font-size: 16px;
+}
+
+@media (max-width: 560px) {
+  body { font-size: 16px; }
+  .site-header h1 { font-size: 32px; }
+  .site-header nav a { margin-right: 14px; }
+}
